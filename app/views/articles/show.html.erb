@@ -1,0 +1,8 @@
+<div class="container">
+  <h1><%= @article.title %></h1>
+  <p><%= @article.content %></p>
+
+  <%= link_to "Edit", edit_articles_path(@article), :class => "btn btn-default btn-warning"  %>
+
+  <%= link_to "Return to index", articles_path, :class => "btn btn-default btn-info"  %>
+</div>

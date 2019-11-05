@@ -1,0 +1,17 @@
+<div class="container">
+<h1>Add a new article</h1>
+
+<%= form_for @article do |f| %>
+  <div class="form-group">
+  <%= f.label :title, "Title", class: "control-label" %>
+  <%= f.text_field :title , class: "form-control" %>
+</div>
+  <div class="form-group">
+  <%= f.label :content, "Content", class: "control-label" %>
+  <%= f.text_field :content, class: "form-control" %>
+</div>
+  <%= f.submit "Submit", class: "btn btn-default btn-primary"  %>
+  <%= link_to "Return to index", articles_path, :class => "btn btn-default btn-info"  %>
+<% end %>
+
+</div>
